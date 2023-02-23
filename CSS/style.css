@@ -21,9 +21,6 @@ header {
 
     width: 1000px;
     margin: 30px auto;  
-    
-    
-
 }
 
 img {
@@ -108,8 +105,57 @@ img {
 
 }
 
+main{
+    padding: 3%;
+}
+
 
 /* contenedor */
+
+.contenedor1 {
+    width: 25%p;
+    background-color: aquamarine;
+    padding: 10px;
+    
+    display: inline-block;
+    margin-inline: 1.5px;
+}
+
+.cont1__img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cont1__titulo{
+    font-size:20px;
+    width: 100%;
+
+    display: flex;
+    
+    justify-content: center;
+}
+
+.cont1__parrafo{
+
+    font-size:17px;
+    padding: 5px;   
+}
+
+.cont1__boton{
+    width: 100%;
+    background-color: crimson;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cont1__img,
+.cont1__titulo,
+.cont1__parrafo {
+
+    margin-bottom: 10px;
+}
+
 
 
 
