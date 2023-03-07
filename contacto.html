@@ -9,27 +9,26 @@
 </head>
 <body>
     
-    <header class="navBackground">
+    <header>
+    
+        <img class="logo" src="./img/Logo-Web.svg"alt="logo sitio web">
 
-        <div class="logo">
-            <img src="./img/Logo-Web.svg" alt="logo sitio web">
-        </div>
-
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Productos</a>
-                        <ul class="submenu">
-                            <li><a href="./res.html">Res</a></li>
-                            <li><a href="./cerdo.html">Cerdo</a></li>
-                            <li><a href="./pollo.html">Pollo</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./recetas.html">Recetas</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                </ul>
-            </nav>
+        <nav class="navegacion">
+           <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+               <li><a href="#">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="./res.html">Res</a></li>
+                        <li><a href="./cerdo.html">Cerdo</a></li>
+                        <li><a href="./pollo.html">Pollo</a></li>
+                    </ul>
+               </li>
+                <li><a href="./recetas.html">Recetas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+   
     </header>
 
     <section class="contenedorbanner">
@@ -39,58 +38,65 @@
     </section>
 
     <section>
-        <div>
+        <div class="titulocirtulo">
             <h2>Contactenos</h2>
-            
-            <form>
-                
-                    <div>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input required type="text" placeholder="Escriba su nombre ..."id="nombre">
-                    </div>
-                    
-                    <div>
-                        <label for="cel"> Numero de celular </label>
-                        <input required type="number" placeholder="Escriba su numero de celular  ..."id="cel">
-                    </div>
-
-                    <div>
-                        <label for="correo">Correo Electronico</label>
-                        <input required type="text" placeholder="Escriba su correo  ..."id="correo">
-                    </div>
-                
-                    <div>
-                        <input type="submit" value="Enviar Informacion">
-                        <input type="reset" value="Borrar Informacion">
-                    </div>
-            </form>
-            
         </div>
-            
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="celular">Número de celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="producto">Producto de interés:</label>
+                <select id="producto" name="producto">
+                    <option value="res">Res</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="cerdo">Cerdo</option>
+                    <option value="viseras">Viseras</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
     </section>
 
-    <footer class="footer-distributed">
+    <footer>
 
-        <div class="logo">
-            <img src="./img/Logo-Web.svg" alt="logo sitio web">
-        </div>
+        <div class="justo">
 
-        <div class="footer-right">
+            <div class="logo2">
+        
+                <img src="./img/Logo-Web.svg" alt="logo sitio web">
 
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+            </div>
 
-        </div>
+        
 
-        <div class="footer-left">
+            <div class="footer-left">
 
-            <p class="footer-links">
-                Canecol Carnes de Colombia
-            </p>
+                <p class="titulo_footer">
+                    Carnecol Carnes de Colombia.
+                </p>
 
-            <p>Company Name &copy; 2015</p>
+                <p>Company Name &copy; 2015</p>
+                
+            </div>
+
+            <div class="redes_sociales">
+
+                <img src="./img/fb.svg" alt=" Facebook">
+            
+
+            </div>
+
         </div>
 
     </footer>

@@ -1,45 +1,46 @@
+
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    
+}
+
+body{ 
+    font-family: 'Lato', sans-serif;
 }
 
 header {
-   
+    background-color: rgb(0, 0, 0);
     display: flex;
-    background-color: black;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
    
 }
-
-.navegacion {
-
-    display: flex;
-    justify-content: center;
-
-    width: 1000px;
-    margin: 30px auto;  
+.logo {
+    width: 200px;
+    flex-wrap: wrap;
+    
 }
 
-img {
-    height: auto;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
 
-}
 
-.imgredondas {
-    border: 20px solid gold;
+
+
+
+header nav {
+	float:right;
+	line-height:30px;
 }
 
 .navegacion ul {
 
-    float: right;
     list-style: none;
     background-color: #000000
+
     
 }
 .menu > li {
@@ -53,12 +54,11 @@ img {
     display: block;
     padding: 15px 20px;
     color: #ffffff;
-    font-family: 'open sans';
     text-decoration: none;  
 }
 
 
-.menu li a:hover{
+.menu li a:hover{   
     color: white;
     transition: all .3s;
     background-color: rgb(243, 50, 50);
@@ -80,7 +80,7 @@ img {
     display: block;
     padding: 15px;
     color: white;
-    font-family: 'Open sans';
+    
     text-decoration: none;
 
 }
@@ -90,36 +90,54 @@ img {
     opacity: 1;
 }
 
-.logo img{
-    margin: 4px 0px 0px 150px;
-    width: 250px;
-    
-}
 
 /* banner  */
 
 .contenedorbanner img {
-
     width: 100%;
-    height: 500px;
-
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
+
+
 main{
-    padding: 3%;
+    padding: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
 }
 
 
 /* contenedor */
 
 .contenedor1 {
-    width: 25%p;
-    background-color: aquamarine;
-    padding: 10px;
     
+    background-color: rgb(237, 237, 237);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
     display: inline-block;
     margin-inline: 1.5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(88, 0, 0, 0.2);
+    
 }
+
+.contenedor1:hover{
+    transform: scale(1.01);
+}
+
+ul {
+    list-style: none;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 .cont1__img{
     width: 100%;
@@ -129,17 +147,15 @@ main{
 .cont1__titulo{
     font-size:20px;
     width: 100%;
-
     display: flex;
-    
     justify-content: center;
 }
 
 .cont1__parrafo{
-
     font-size:17px;
-    padding: 5px;   
+    padding: 5px; 
 }
+
 
 .cont1__boton{
     width: 100%;
@@ -198,6 +214,11 @@ main{
     
 }
 
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 .contenedorindex {
@@ -205,6 +226,7 @@ main{
     display: flex;
     background-color: aqua;
     justify-content: space-around;
+    
 
   
 }
@@ -213,68 +235,142 @@ main{
 
     display: flex;
     border-radius: 50%;
-    margin: 20px 0px 15px 63px;
-    width: 80%; 
+    padding: 10px;
+    width: 100%; 
     
 }
 
 
 .titulocirtulo {
 
-    background-color: white;
     display: flex;
     justify-content:center;
-    margin-top: 10PX ;
-    
-
-    
+    padding: 15px;
     color: black;   
 }
 
-.cont1 {
-    width: 25%;
-    
-    
+/* Parrafos de la paginas RES CERDO POLLO  */
+
+.titulocirtulo_p {
+
+    display: flex;
+    justify-content:center;
+    padding: 15px;
+    color: black;   
 }
-.cont2  {
-    width: 25%; 
-    
+
+
+/* --------------------footer------------------- */
+
+
+footer {
+
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+
 }
-.cont3 {
-    width: 25%; 
-    
+
+.justo {
+
+    background-color: #000000;
+
+    display: grid;
+    grid-template-columns: 30% 45% 25% ;
+
 }
-.cont4 {
-    width: 25%;  
+
+
+
+.logo2 img {
+
+    width: 200px ;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
     
 }
 
-/* footer */
+.redes_sociales {
 
+    display: flex;
+    flex-wrap: wrap;
 
-.footer-distributed {
+    align-content: center;
+    justify-content: center;
     
-  background-color: #000000;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
+}
+
+.redes_sociales  img:hover {
+    
+    transform: scale(1.03);
+
+}
+
+
+.redes_sociales img {
+
+    width: 20%;
+    padding: 5px;
+    margin-left: 10%;
+    
+}
+
+/* formullario  de contacto  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
   
-  padding: 45px 50px;
-  display: flex;
-}
+  label,
+  input,
+  select {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  label {
+    width: 150px;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f12f1a;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
