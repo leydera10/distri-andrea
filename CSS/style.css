@@ -310,7 +310,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    align-content: s;
+    align-content: center;
     justify-content: center;
     
 }
@@ -374,10 +374,98 @@ form {
   button:hover {
     background-color: #000000;
   }
+  
+  /* Medias Querys */
 
+  @media screen  and (max-width: 767px) {
 
-}
     
+
+    .justo { 
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 50% 25% ;
+    
+    }
+
+    .logo2 {
+        padding: 3%;
+    }
+
+    .logo2 img{
+        padding: 3%;
+    }
+
+    .justo img { 
+        margin: 0 auto;
+    
+    }
+
+    .footer-left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .redes_sociales{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .redes_sociales img{
+        width: 50px;
+        
+    }
+
+    .misionvision {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25% ;
+    }
+    
+  }
+
+  @media screen  and (min-width: 768px) and (max-width: 1023px) {
+
+    .justo { 
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 100%  ;
+    
+    }
+
+    .logo2 {
+        padding: 3%;
+    }
+
+    .logo2 img{
+        padding: 3%;
+    }
+
+    .justo img { 
+        margin: 0 auto;
+    
+    }
+
+    .footer-left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .redes_sociales{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .redes_sociales img{
+        width: 50px;
+        
+    }
+  }
  
 
 
