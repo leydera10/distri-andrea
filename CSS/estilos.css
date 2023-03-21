@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(180, 56, 56);
+  color: #ffffff !important;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  margin: 0px 0px 0px 50px;
+  flex-wrap: wrap;
+}
+
+.logo2 img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenedorbanner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1%;
+}
+main .contenedor1 {
+  background-color: rgb(237, 237, 237);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: inline-block;
+  margin-inline: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(243, 26, 26, 0.2);
+}
+main .contenedor1:hover {
+  transform: scale(1.01);
+}
+main .contenedor1 .cont1__img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+main .contenedor1 .cont1__titulo {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+main .contenedor1 .cont1__boton {
+  width: 100%;
+  background-color: crimson;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.misionvision {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.misionvision .mision .titulo-mision {
+  display: flex;
+  margin: 5px 8px 8px 5px;
+  padding: 20px;
+  justify-content: center;
+}
+.misionvision .mision > p {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: center;
+  padding: 15px;
+  color: black;
+}
+.misionvision .vision .titulo-vision {
+  display: flex;
+  margin: 5px 8px 8px 5px;
+  padding: 20px;
+  justify-content: center;
+}
+.misionvision .vision > p {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: center;
+  padding: 15px;
+  color: black;
+}
+
+.titulocirtulo {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: black;
+}
+
+.tituloqs {
+  display: flex;
+  margin: 5px 8px 8px 5px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.quienessomosp {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: black;
+}
+
+footer {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+footer .justo {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .footer-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+footer .redes_sociales {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+footer .redes_sociales img {
+  width: 20%;
+  padding: 5px;
+  margin-left: 10%;
+}
+footer .redes_sociales img:hover {
+  transform: scale(1.03);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+form label {
+  width: 150px;
+  display: inline-block;
+  margin: 10px 0;
+}
+form input {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+form select {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+form button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f12f1a;
+  color: white;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .justo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 50% 25%;
+  }
+  .logo2 {
+    padding: 3%;
+  }
+  .logo2 img {
+    padding: 3%;
+  }
+  .justo img {
+    margin: 0 auto;
+  }
+  .footer-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .redes_sociales {
+    width: 100%;
+    justify-content: center;
+  }
+  .redes_sociales img {
+    width: 50px;
+  }
+  .misionvision {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .justo {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+  }
+  .logo2 {
+    padding: 3%;
+  }
+  .logo2 img {
+    padding: 3%;
+  }
+  .justo img {
+    margin: 0 auto;
+  }
+  .footer-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .redes_sociales {
+    width: 100%;
+    justify-content: center;
+  }
+  .redes_sociales img {
+    width: 50px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
