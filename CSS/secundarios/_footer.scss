@@ -1,13 +1,13 @@
 footer {
 
-    color: #ffffff;
+    color: $colortextfooter_barra;
     background-color: rgb(0, 0, 0);
     padding: 20px;
 
 
     .justo {
     
-        background-color: #000000;
+        background-color: $colortextocuerpo ;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;

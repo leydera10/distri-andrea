@@ -38,7 +38,6 @@ ul {
 .contenedorbanner img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
 }
 
 main {
@@ -134,12 +133,12 @@ main .contenedor1 .cont1__boton {
 }
 
 footer {
-  color: #ffffff;
+  color: white;
   background-color: rgb(0, 0, 0);
   padding: 20px;
 }
 footer .justo {
-  background-color: #000000;
+  background-color: black;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -204,7 +203,7 @@ form button {
   margin: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #f12f1a;
+  background-color: crimson;
   color: white;
   cursor: pointer;
 }
