@@ -1,57 +1,74 @@
 
-main{
-
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    padding: 1%;
-
-    .contenedor1 {
+.container {
+    width: 100% ;
+    display: flex;
+    max-width: 1800px;
+    justify-content: center;
+    align-items: center;
     
-        background-color: rgb(237, 237, 237);
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding: 10px;
-        display: inline-block;
-        margin-inline: 15px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(243, 26, 26, 0.2);
 
-        &:hover{
-            transform: scale(1.01);
-        }
+    .card {
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: rgb(237, 237, 237);
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
 
-        .cont1__img{
+        & img {
             width: 100%;
             border-radius: 50%;
-            margin-bottom: 10px;
+            padding: 10px 10px 0px 10px  ;
         }
 
-        .cont1__titulo{
-            font-size:20px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
+        & .contenido {
+            padding: 25px;
+            text-align: center;
+
+            & h3 {
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            & p {
+                line-height: 1.5;
+                color: gray ;
+            }
+
+            & a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                margin-top: 10px;
+                color: $colorbotton ;
+                border: 1px solid $colorbotton;
+                border-radius: 4px;
+                transition: all 400ms ease;
+                
+                &:hover {
+                    background: $colorbotton;
+                    color: white;
+                }
+            }
+
+            
         }
 
-        .cont1__boton{
-            width: 100%;
-            background-color: $colorbotton;
-            border: none;
-            padding: 5px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        &:hover {
+            box-shadow: 5px 5px 10px $colorbotton;
+            transform: translateY(-3%);
         }
-        
-    }
 
-
+        }   
 }
+
 
 .misionvision{
     display: grid;
     grid-template-columns: 50% 50%;
+    text-align: center;
     
     .mision {
 
@@ -81,6 +98,7 @@ main{
             margin: 5px 8px 8px 5px ;
             padding: 20px;
             justify-content: center;
+            
         }
 
         & > p {
@@ -116,5 +134,6 @@ main{
     justify-content:center;
     padding: 15px;
     color: $colortextocuerpo; 
+    text-align: center;
 }
 

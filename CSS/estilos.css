@@ -42,49 +42,63 @@ ul {
   aspect-ratio: 16/7;
 }
 
-main {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 1%;
-}
-main .contenedor1 {
-  background-color: rgb(237, 237, 237);
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 10px;
-  display: inline-block;
-  margin-inline: 15px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(243, 26, 26, 0.2);
-}
-main .contenedor1:hover {
-  transform: scale(1.01);
-}
-main .contenedor1 .cont1__img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-main .contenedor1 .cont1__titulo {
-  font-size: 20px;
+.container {
   width: 100%;
   display: flex;
+  max-width: 1800px;
   justify-content: center;
-  margin-bottom: 10px;
+  align-items: center;
 }
-main .contenedor1 .cont1__boton {
+.container .card {
   width: 100%;
-  background-color: crimson;
-  border: none;
-  padding: 5px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(237, 237, 237);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.container .card img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 10px 10px 0px 10px;
+}
+.container .card .contenido {
+  padding: 25px;
+  text-align: center;
+}
+.container .card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.container .card .contenido p {
+  line-height: 1.5;
+  color: gray;
+}
+.container .card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(154, 16, 43);
+  border: 1px solid rgb(154, 16, 43);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.container .card .contenido a:hover {
+  background: rgb(154, 16, 43);
+  color: white;
+}
+.container .card:hover {
+  box-shadow: 5px 5px 10px rgb(154, 16, 43);
+  transform: translateY(-3%);
 }
 
 .misionvision {
   display: grid;
   grid-template-columns: 50% 50%;
+  text-align: center;
 }
 .misionvision .mision .titulo-mision {
   display: flex;
@@ -132,6 +146,7 @@ main .contenedor1 .cont1__boton {
   justify-content: center;
   padding: 15px;
   color: black;
+  text-align: center;
 }
 
 footer {
@@ -205,12 +220,26 @@ form button {
   margin: 10px;
   border: none;
   border-radius: 5px;
-  background-color: crimson;
+  background-color: rgb(154, 16, 43);
   color: white;
   cursor: pointer;
 }
 form button:hover {
   background-color: #000000;
+}
+
+.mapayformulario {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 2%;
+}
+.mapayformulario .map {
+  width: 100%;
+  padding: 0% 10% 10% 10%;
+  align-content: center;
+}
+.mapayformulario .map h3 {
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 767px) {
@@ -219,14 +248,14 @@ form button:hover {
     grid-template-columns: 100%;
     grid-template-rows: 25% 50% 25%;
   }
+  .justo img {
+    margin: 0 auto;
+  }
   .logo2 {
     padding: 3%;
   }
   .logo2 img {
     padding: 3%;
-  }
-  .justo img {
-    margin: 0 auto;
   }
   .footer-left {
     width: 100%;
@@ -243,13 +272,16 @@ form button:hover {
     display: flex;
     flex-direction: column;
   }
-  main {
+  .container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
+  }
+  .container .card .contenido p {
+    display: none;
   }
   .contenedorbanner img {
     width: 100%;
@@ -283,13 +315,18 @@ form button:hover {
   .redes_sociales img {
     width: 50px;
   }
-  main {
+  .container {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
+    grid-column-gap: 2rem;
+  }
+  .container .card .contenido p {
+    display: none;
   }
   .contenedorbanner img {
     width: 100%;

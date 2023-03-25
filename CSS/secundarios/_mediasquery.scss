@@ -6,20 +6,19 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25% 50% 25% ;
+
+        & img {
+            margin: 0 auto;
+        };
     
     }
 
     .logo2 {
         padding: 3%;
-    }
 
-    .logo2 img{
-        padding: 3%;
-    }
-
-    .justo img { 
-        margin: 0 auto;
-    
+        & img {
+            padding: 3%;
+        }
     }
 
     .footer-left {
@@ -42,13 +41,23 @@
         flex-direction: column;
     }
 
-    main{
+    .container{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 10%;
+
+        & .card {
+            
+            & .contenido {
+
+                & p{
+                    display: none;
+                }
+            }
+        }
         
     }
 
@@ -99,13 +108,27 @@
         
     }
 
-    main{
+    .container{
+
+        width: 100% ;
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 10%;
+        grid-column-gap: 2rem;
+         
+        & .card {
+
+            & .contenido {
+
+                & p{
+                    display: none;
+                }
+            }
+        }
+        
     }
 
     .contenedorbanner img {
