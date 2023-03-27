@@ -293,7 +293,7 @@ form button:hover {
   .contenedorbanner img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1.4/1;
+    aspect-ratio: 16/14;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
