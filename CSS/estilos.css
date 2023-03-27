@@ -295,24 +295,23 @@ form button:hover {
     height: auto;
     aspect-ratio: 16/15;
   }
+  .mapayformulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-bottom: 5%;
+  }
+  .mapayformulario div {
+    width: 100%;
+    text-align: center;
+  }
+  .mapayformulario div h3 {
+    padding-top: 10%;
+  }
+  .mapayformulario div iframe {
+    width: 100%;
+  }
 }
-.mapayformulario {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  padding-bottom: 5%;
-}
-.mapayformulario div {
-  width: 100%;
-  text-align: center;
-}
-.mapayformulario div h3 {
-  padding-top: 10%;
-}
-.mapayformulario div iframe {
-  width: 100%;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .justo {
     display: grid;
@@ -356,5 +355,21 @@ form button:hover {
     width: 100%;
     height: auto;
     aspect-ratio: 16/8;
+  }
+  .mapayformulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-bottom: 5%;
+  }
+  .mapayformulario div {
+    width: 100%;
+    text-align: center;
+  }
+  .mapayformulario div h3 {
+    padding-top: 10%;
+  }
+  .mapayformulario div iframe {
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
