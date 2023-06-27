@@ -1,84 +1,67 @@
 main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .card {
-        border-radius: 6px;
-        overflow: hidden;
-        background: rgb(237, 237, 237);
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
-        max-width: 20000px;
-
-        
-
-        
-    }
-}
-.container {
-    
-    margin: 60px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+    display: grid;
     
 
-    .card {
-        width: 50%;
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background: rgb(237, 237, 237);
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
-
+    & .container {
         
-
-        & .contenido {
-            padding: 25px;
-            text-align: center;
-
-            & h3 {
-                font-weight: 400;
-                margin-bottom: 15px;
-            }
-
-            & p {
-                line-height: 1.5;
-                color: gray ;
-            }
-
-            & .boton-agregar {
-                text-decoration: none;
-                display: inline-block;
-                padding: 10px;
-                margin-top: 10px;
-                color: $colorbotton ;
-                border: 1px solid $colorbotton;
-                border-radius: 4px;
-                transition: all 400ms ease;
-                
-                &:hover {
-                    background: $colorbotton;
-                    color: white;
+        grid-template-columns: 1fr 1fr ;
+    
+        & .card {
+            width: 50%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: rgb(237, 237, 237);
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            cursor: default;
+            transition: all 400ms ease;
+    
+            & .contenido {
+                padding: 25px;
+                text-align: center;
+    
+                & h3 {
+                    font-weight: 400;
+                    margin-bottom: 15px;
                 }
+    
+                & p {
+                    line-height: 1.5;
+                    color: gray ;
+                }
+    
+                & .boton-agregar {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 10px;
+                    margin-top: 10px;
+                    color: $colorbotton ;
+                    border: 1px solid $colorbotton;
+                    border-radius: 4px;
+                    transition: all 400ms ease;
+                    
+                    &:hover {
+                        background: $colorbotton;
+                        color: white;
+                    }
+                }
+    
+                
             }
+    
+            &:hover {
+                box-shadow: 5px 5px 10px $colorbotton;
+                transform: translateY(-3%);
+            }
+    
+            } 
+    
+          
+    }
 
-            
-        }
-
-        &:hover {
-            box-shadow: 5px 5px 10px $colorbotton;
-            transform: translateY(-3%);
-        }
-
-        }   
+    
 }
+
 
 
 .misionvision{

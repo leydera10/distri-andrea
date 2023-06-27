@@ -1,0 +1,15 @@
+[
+    {"id":1, "Tipo": "RES", "Nombre": "Carne fina", "Stock": 1,"precio": 13500, "img":"./img/Carne-Res-.webp"},
+    {"id":2, "Tipo": "CERDO","Nombre": "Panceta", "Stock": 1,"precio":  11000, "img": "./img/Carne-Res-.webp"},
+    {"id":3, "Tipo":"POLLO", "Nombre":"Pechuga", "Stock": 1, "precio":  7000, "img": "./img/Carne-Res-.webp"},
+    {"id":4, "Tipo":"RES", "Nombre":"Chatas", "Stock":1, "precio":15500, "img": "./img/Carne-Res-.webp"},
+    {"id":5, "Tipo":"CERDO", "Nombre":"Tocino", "Stock":1, "precio":8500,"img": "./img/Carne-Res-.webp"},
+    {"id":6, "Tipo":"POLLO", "Nombre":"Pechuga desguasada", "Stock":1, "precio":9000, "img": "./img/Carne-Res-.webp"},
+    {"id":7, "Tipo":"RES", "Nombre":"Carne de bola", "Stock":1, "precio":13500,"img": "./img/Carne-Res-.webp"},
+    {"id":8, "Tipo":"CERDO", "Nombre":"lomo de cerdo", "Stock":1, "precio":13000, "img": "./img/Carne-Res-.webp"},
+    {"id":9, "Tipo":"POLLO", "Nombre":"Perniles", "Stock":1, "precio":5500, "img": "./img/Carne-Res-.webp"},
+    {"id":10, "Tipo":"RES", "Nombre":"Cadera","Stock": 1, "precio":13500, "img": "./img/Carne-Res-.webp"},
+    {"id":11, "Tipo":"CERDO", "Nombre":"Costilla ahumada", "Stock":1, "precio":10000,"img": "./img/Carne-Res-.webp"},
+    {"id":12, "Tipo":"POLLO", "Nombre":"Alas", "Stock":1, "precio":5500, "img": "./img/Carne-Res-.webp"}
+
+]
